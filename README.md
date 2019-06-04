@@ -1,0 +1,2 @@
+# spip-admin
+spip-admin
