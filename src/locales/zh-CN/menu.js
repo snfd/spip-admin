@@ -1,4 +1,8 @@
 export default {
+  'menu.workbench': '工作台',
+  'menu.workbench.index': '工作台首页',
+  'menu.workbench.process': '流程中心',
+  'menu.workbench.bulletinboard': '公告板管理',
   'menu.home': '首页',
   'menu.login': '登录',
   'menu.register': '注册',

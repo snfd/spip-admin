@@ -23,6 +23,29 @@ export default [
     component: '../layouts/BasicLayout',
     Routes: ['src/pages/Authorized'],
     routes: [
+      //工作台
+      {
+        path: '/workbench',
+        icon: 'table',
+        name: 'workbench',
+        routes: [
+          {
+            path: '/workbench/index',
+            name: 'index',
+            component: './Workbench/Index',
+          },
+          {
+            path: '/workbench/process',
+            name: 'process',
+            component: './Workbench/Process',
+          },
+          {
+            path: '/workbench/bulletin-board',
+            name: 'bulletinboard',
+            component: './Workbench/BulletinBoard',
+          }
+        ],
+      }, 
       // dashboard
       { path: '/', redirect: '/dashboard/analysis', authority: ['admin', 'user'] },
       {
