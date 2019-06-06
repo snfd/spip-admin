@@ -84,6 +84,7 @@ class StandardTable extends PureComponent {
       <div className={styles.standardTable}>
         <div className={styles.tableAlert}>
           <Alert
+            style={{display:this.props.noAlert?'none':'block'}}
             message={
               <Fragment>
                 已选择 <a style={{ fontWeight: 600 }}>{selectedRowKeys.length}</a> 项&nbsp;&nbsp;
@@ -107,7 +108,7 @@ class StandardTable extends PureComponent {
         </div>
         <Table
           rowKey={rowKey || 'key'}
-          rowSelection={rowSelection}
+          // rowSelection={rowSelection}
           dataSource={list}
           pagination={paginationProps}
           onChange={this.handleTableChange}

@@ -9,11 +9,8 @@ import {
   Form,
   Input,
   Select,
-  Icon,
   Button,
-  Dropdown,
   Menu,
-  InputNumber,
   DatePicker,
   Modal,
   message,
@@ -25,9 +22,7 @@ import {
 const {RangePicker} = DatePicker;
 import StandardTable from '@/components/StandardTable';
 import PageHeaderWrapper from '@/components/PageHeaderWrapper';
-
 import styles from './BulletinBoard.less';
-
 const FormItem = Form.Item;
 const { Step } = Steps;
 const { TextArea } = Input;
@@ -584,6 +579,7 @@ class TableList extends PureComponent {
           <div className={styles.tableList}>
             <div className={styles.tableListForm}>{this.renderForm()}</div>
             <StandardTable
+              noAlert={true}
               selectedRows={selectedRows}
               loading={loading}
               data={data}
