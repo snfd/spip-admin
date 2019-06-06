@@ -45,8 +45,8 @@ export default [
             component: './Workbench/BulletinBoard',
           },
           {
-            path: '/workbench/AddAnnouncement',
-            name: 'AddAnnouncement',
+            path: '/workbench/add-announcement',
+            name: 'addannouncement',
             component: './Workbench/AddAnnouncement',
             hideInMenu:true,
           },
