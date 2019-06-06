@@ -43,7 +43,13 @@ export default [
             path: '/workbench/bulletin-board',
             name: 'bulletinboard',
             component: './Workbench/BulletinBoard',
-          }
+          },
+          {
+            path: '/workbench/AddAnnouncement',
+            name: 'AddAnnouncement',
+            component: './Workbench/AddAnnouncement',
+            hideInMenu:true,
+          },
         ],
       }, 
       // dashboard

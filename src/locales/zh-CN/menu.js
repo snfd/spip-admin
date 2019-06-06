@@ -1,6 +1,7 @@
 export default {
   'menu.workbench': '工作台',
   'menu.workbench.index': '工作台首页',
+  'menu.workbench.addannouncement': '新建公告板',
   'menu.workbench.process': '流程中心',
   'menu.workbench.bulletinboard': '公告板管理',
   'menu.home': '首页',

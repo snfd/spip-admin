@@ -2,6 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import { connect } from 'dva';
 import moment from 'moment';
 import Link from 'umi/link';
+import router from 'umi/router';
 import {
   Row,
   Col,
@@ -377,7 +378,9 @@ class TableList extends PureComponent {
       payload: params,
     });
   };
-
+  goAdd = ()=>{
+    router.push('./AddAnnouncement')
+  };
   handleFormReset = () => {
     const { form, dispatch } = this.props;
     form.resetFields();
@@ -476,7 +479,6 @@ class TableList extends PureComponent {
     message.success('添加成功');
     this.handleModalVisible();
   };
-
   handleUpdate = fields => {
     const { dispatch } = this.props;
     const { formValues } = this.state;
@@ -538,7 +540,7 @@ class TableList extends PureComponent {
               <Button style={{ marginLeft: 8 }} onClick={this.handleFormReset}>
                 清空
               </Button>
-              <Button style={{ marginLeft: 8 }} icon="plus" type="primary" onClick={() => this.handleModalVisible(true)}>
+              <Button style={{ marginLeft: 8 }} icon="plus" type="primary" onClick={this.goAdd}>
                 新建
               </Button>
             </span>
