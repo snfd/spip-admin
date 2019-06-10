@@ -379,7 +379,6 @@ class TableList extends PureComponent {
     });
   };
   goAdd = ()=>{
-    
     router.push('/workbench/add-announcement')
   };
   handleFormReset = () => {
