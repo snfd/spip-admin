@@ -4,6 +4,8 @@ export default {
   'menu.workbench.addannouncement': '新建公告板',
   'menu.workbench.process': '流程中心',
   'menu.workbench.bulletinboard': '公告板管理',
+  'menu.program': '节目管理',
+  'menu.program.index': '节目管理首页',
   'menu.home': '首页',
   'menu.login': '登录',
   'menu.register': '注册',
