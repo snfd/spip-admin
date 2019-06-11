@@ -52,6 +52,19 @@ export default [
           },
         ],
       }, 
+      //工作台
+      {
+        path: '/program',
+        icon: 'play-circle',
+        name: 'program',
+        routes: [
+          {
+            path: '/program/index',
+            name: 'index',
+            component: './program/Index',
+          },
+        ],
+      }, 
       // dashboard
       { path: '/', redirect: '/dashboard/analysis', authority: ['admin', 'user'] },
       {
