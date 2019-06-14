@@ -10,6 +10,43 @@
   }
 }
 
+.main_cintainer {
+  background: '#ECECEC';
+  padding: '10px' ;
+}
+
+.ele_row {
+  padding: 5px 0;
+
+}
+.eee >div {
+  width: 49%;
+  height: 95%;
+  background-color: #fff;
+}
+
+.title_row {
+  min-height: 30vh;
+  background-color: #fff;
+  justify-content: space-between;
+  border-radius: 4px;
+  // border-bottom: 1px solid #000;
+}
+
+.title_row_else {
+
+  background-color: #fff;
+  justify-content: space-between;
+  // border-bottom: 1px solid #000;
+}
+.ele_col {
+  // min-height: 200px;
+  height: 90%;
+}
+
+.card_body {
+  padding: 0;
+}
 .tableListForm {
   :global {
     .ant-form-item {
@@ -36,6 +73,22 @@
   }
 }
 
+.item_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.app-maintainer {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: @screen-lg) {
   .tableListForm :global(.ant-form-item) {
     margin-right: 24px;
@@ -46,4 +99,28 @@
   .tableListForm :global(.ant-form-item) {
     margin-right: 8px;
   }
+}
+
+.menu_item {
+  width:50%;
+  line-height: 30px;
+  text-align: center;
+}
+
+.date_icon {
+  margin-top: -12px;
+  height: 3px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.fresh_flag {
+  background-color: rgb(44, 206, 120);
+  height: 2px;
+  width: 50%;
+}
+.match_flag {
+  background-color: rgb(179, 44, 206);
+  height: 2px;
+  width: 50%;
 }
